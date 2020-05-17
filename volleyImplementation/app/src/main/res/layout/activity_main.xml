@@ -8,26 +8,38 @@
     tools:context=".MainActivity"
     android:padding="20dp">
 
+    <EditText
+        android:id="@+id/uid"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:inputType="number"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:hint="Enter user id"
+        android:textSize="20dp" />
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="218dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="263dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@android:color/black"
         android:id="@+id/result"
+
         />
-    </androidx.core.widget.NestedScrollView>
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="263dp"
-        tools:srcCompat="@tools:sample/avatars" />
 
 
 
@@ -38,8 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="125dp"
-        android:text="Get Profiles" />
+        android:layout_marginBottom="216dp"
+        android:layout_above="@+id/imageView"
+        android:text="Get Profile" />
 
 
 </RelativeLayout>
